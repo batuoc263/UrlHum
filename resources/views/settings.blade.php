@@ -111,7 +111,7 @@
                                             </i>
                                         </label>
                                         <div class="col-sm-8 col-md-6">
-                                            <input class="form-control" type="text" name="unauthorized_redirect"
+                                            <input class="form-control" required type="text" name="unauthorized_redirect"
                                                    value="{{ setting('unauthorized_redirect') }}"
                                                    placeholder="{{ __('settings.unauthorized_redirect_placeholder') }}"
                                                    >

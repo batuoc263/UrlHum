@@ -83,12 +83,7 @@
                         <i class="fa fa-th-list text-blue"></i> {{ __('url.my.my') }}
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('url.public')}} ">
-                        <i class="fa fa-clock text-blue"></i> {{ __('url.public') }}
-                    </a>
-                </li>
-
+                
             </ul>
 
             @if (isAdmin())
@@ -99,6 +94,12 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('url.list') }}">
                         <i class="fa fa-stream text-green"></i> {{ __('url.list') }}
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('url.public')}} ">
+                        <i class="fa fa-clock text-blue"></i> {{ __('url.public') }}
                     </a>
                 </li>
 

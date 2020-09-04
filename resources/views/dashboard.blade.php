@@ -7,9 +7,11 @@
             @include('widgets/create-url')
         @endif
         <div class="row mt-5">
-            @isset($publicUrls)
-                @include('widgets/latests-urls')
-            @endisset
+            @if (isAdmin())
+                @isset($publicUrls)
+                    @include('widgets/latests-urls')
+                @endisset
+            @endif
 
             @isset($referers)
                 @include('widgets/referrers')
